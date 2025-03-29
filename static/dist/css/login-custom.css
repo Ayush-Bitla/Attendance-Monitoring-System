@@ -1,0 +1,129 @@
+/* Custom Login Page Styles */
+
+/* Background */
+body.hold-transition.login-page {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+}
+
+/* Login Box */
+.login-box {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Login Logo */
+.login-logo {
+    margin-bottom: 1.5rem;
+}
+
+.login-logo a {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Card Body */
+.login-card-body {
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid #e1e1e1;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.input-group-text {
+    background: transparent;
+    border: 1px solid #e1e1e1;
+    border-left: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #95a5a6;
+}
+
+/* Login Button */
+.btn-primary {
+    height: 45px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%) !important;
+    border: none !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+/* Links */
+.login-card-body a {
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.login-card-body a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Messages */
+.alert {
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.alert-danger {
+    background-color: #fee2e2;
+    border-color: #fecaca;
+    color: #dc2626;
+}
+
+.alert-success {
+    background-color: #dcfce7;
+    border-color: #bbf7d0;
+    color: #16a34a;
+}
+
+/* reCAPTCHA Container */
+.g-recaptcha {
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .login-box {
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .login-card-body {
+        padding: 1.5rem;
+    }
+    
+    .login-logo a {
+        font-size: 2rem;
+    }
+} 
