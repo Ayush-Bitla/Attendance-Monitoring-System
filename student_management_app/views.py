@@ -25,8 +25,6 @@ def doLogin(request):
     if request.method!="POST":
         return HttpResponse("<h2>Method Not Allowed</h2>")
     else:
-        # Temporarily comment out captcha validation for testing
-        """
         captcha_token=request.POST.get("g-recaptcha-response")
         cap_url="https://www.google.com/recaptcha/api/siteverify"
         cap_secret="6LeWtqUZAAAAANlv3se4uw5WAg-p0X61CJjHPxKT"
@@ -34,11 +32,10 @@ def doLogin(request):
         cap_server_response=requests.post(url=cap_url,data=cap_data)
         cap_json=json.loads(cap_server_response.text)
         
-        # Temporarily bypass captcha for testing
-        # if cap_json['success']==False:
-        #     messages.error(request,"Invalid Captcha Try Again")
-        #     return HttpResponseRedirect("/")
-        """
+        if cap_json['success']==False:
+            messages.error(request,"Invalid Captcha Try Again")
+            return HttpResponseRedirect("/")
+            
         # Debug print statements
         print("LOGIN ATTEMPT")
         print(f"Email: {request.POST.get('email')}")
