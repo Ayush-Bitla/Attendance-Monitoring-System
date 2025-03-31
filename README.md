@@ -11,7 +11,7 @@ The **Attendance Monitoring System** is a project designed to streamline and aut
 - Secure database management
 
 ## Technology Stack
-- **Hardware:** ESP8266, Fingerprint Sensor
+- **Hardware:** ESP-12F, Fingerprint Sensor
 - **Software:** Django (Python), Embedded C
 - **Database:** MySQL
 - **Tools & Frameworks:** Arduino IDE, Proteus for circuit simulation, Django Framework
